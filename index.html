@@ -54,6 +54,21 @@
       ]
     }
     </script>
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://statistic.webmatostat.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '14']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
 </head>
 <body class="bg-gray-50 text-slate-900">
     <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 z-50 flex flex-col md:flex-row items-center justify-between shadow-2xl">
